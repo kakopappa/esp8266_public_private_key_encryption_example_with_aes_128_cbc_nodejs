@@ -4,6 +4,8 @@ This example demonstrate how to communicate securely in an unsecure WiFi using p
 
 Data is encryped with aes 128 cbc encryption after the initial handshake.
 
+![alt text](https://github.com/kakopappa/esp8266_public_private_key_encryption_example_with_aes_128_cbc_nodejs/blob/main/demo.png)
+
 https://www.preveil.com/blog/public-and-private-key/
 
 1. Generate RSA keys.
