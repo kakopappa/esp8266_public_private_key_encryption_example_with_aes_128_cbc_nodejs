@@ -1,6 +1,8 @@
 # ESP8266 public/private key encryption example with NodeJS server
 
-This example demonstrate how to communicate securely in an unsecure WiFi using public/private. Data is encryped with aes 128 cbc encryption.
+This example demonstrate how to communicate securely in an unsecure WiFi using public/private key encryption. 
+
+Data is encryped with aes 128 cbc encryption after the initial handshake.
 
 https://www.preveil.com/blog/public-and-private-key/
 
