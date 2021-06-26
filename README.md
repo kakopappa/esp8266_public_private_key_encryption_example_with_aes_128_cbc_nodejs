@@ -14,14 +14,21 @@ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 and update rsa_private_key and rsa_public_key in the sketch.
 
 2. Start the NodeJS Server. by default the server starts on port 80
-3. Update the Arduino sketch with IP of the server in _server_ip and change WIFI_SSID, WIFI_PASS
-4. When when sketch starts, 
-  1. Connect to WiFi
-  2. Send the public key to server 
-  3. The server generates a new AES KEY/IV and encrypt it using public key and send it back to ESP.
-  4. ESP decrypt the message using private key and store the key/iv in memory
-  5. ESP sends a login request with encrypted data (encryped using above key)
-  6. The server decrypt the data and encrypt user account info and send it back to ESP
-  7. ESP decrypts the account info
+
+4. Update the Arduino sketch with IP of the server in _server_ip and change WIFI_SSID, WIFI_PASS
+
+6. When when sketch starts it connects to WiFi
+
+7. Send the public key to server 
+
+9. The server generates a new AES KEY/IV and encrypt it using public key and send it back to ESP.
+
+10. ESP decrypt the message using private key and store the key/iv in memory
+
+12. ESP sends a login request with encrypted data (encryped using above key)
+
+14. The server decrypt the data and encrypt user account info and send it back to ESP
+
+16. ESP decrypts the account info
 
 
