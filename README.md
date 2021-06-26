@@ -6,8 +6,6 @@ Data is encryped with aes 128 cbc encryption after the initial handshake.
 
 ![alt text](https://github.com/kakopappa/esp8266_public_private_key_encryption_example_with_aes_128_cbc_nodejs/blob/main/demo.png)
 
-https://www.preveil.com/blog/public-and-private-key/
-
 1. Generate RSA keys.
 
 openssl genrsa -out private.pem 1024
@@ -33,4 +31,7 @@ and update rsa_private_key and rsa_public_key in the sketch.
 
 16. ESP decrypts the account info
 
+
+More info:
+https://www.preveil.com/blog/public-and-private-key/
 
