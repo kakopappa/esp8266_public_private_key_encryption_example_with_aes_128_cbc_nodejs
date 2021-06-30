@@ -19,7 +19,7 @@ and update rsa_private_key and rsa_public_key in the sketch.
 
 6. When when sketch starts it connects to WiFi
 
-7. Send the public key to server 
+7. ESP sends the public key to server 
 
 9. The server generates a new AES KEY/IV and encrypt it using public key and send it back to ESP.
 
